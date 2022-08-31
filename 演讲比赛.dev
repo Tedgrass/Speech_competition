@@ -1,7 +1,7 @@
 [Project]
 filename = 演讲比赛.dev
 name = 演讲比赛
-UnitCount = 6
+UnitCount = 5
 Type = 1
 Ver = 3
 ObjFiles = 
@@ -14,7 +14,7 @@ Compiler =
 CppCompiler = 
 Linker = 
 IsCpp = 1
-Icon = app.ico
+Icon = 
 ExeOutput = 
 ObjectOutput = 
 LogOutput = 
