@@ -1,5 +1,5 @@
 [Project]
-filename = 演讲比赛.dev
+filename = speech.dev
 name = 演讲比赛
 UnitCount = 5
 Type = 1
@@ -7,7 +7,7 @@ Ver = 3
 ObjFiles = 
 Includes = 
 Libs = 
-PrivateResource = 演讲比赛_private.rc
+PrivateResource = 
 ResourceIncludes = 
 MakeIncludes = 
 Compiler = 
@@ -31,7 +31,7 @@ Folders =
 IncludeVersionInfo = 0
 SupportXPThemes = 0
 CompilerSet = 1
-CompilerSetType = 1
+CompilerSetType = 0
 StaticLink = 1
 AddCharset = 1
 Encoding = AUTO

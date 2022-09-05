@@ -13,6 +13,8 @@ public:
 	speechCompetation();
 	//欢迎界面
 	void welcome();
+	//准备12名参赛选手
+	void personPrepare();
 	//开始比赛
 	void startCompetation();
 	//析构
@@ -21,7 +23,7 @@ public:
 	vector<int> v1;
 	vector<int> v2;
 	vector<int> vHonor;
-	map<int,person> mHonor;
+	map<int,person> mPerson;
 };
 
 #endif
