@@ -13,7 +13,7 @@ public:
 public:
 	int m_id;
 	string m_name;
-	double m_score[2]={0,0};
+	double m_score[2];
 };
 
 #endif
