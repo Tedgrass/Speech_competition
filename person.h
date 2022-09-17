@@ -7,13 +7,13 @@ using namespace std;
 class person{
 public:
 	//构造函数
-	person(int,string,float);
+	person();
 	//析构函数
 	~person();
 public:
 	int m_id;
 	string m_name;
-	float m_score;
+	double m_score[2];
 };
 
 #endif

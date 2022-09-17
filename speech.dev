@@ -1,5 +1,5 @@
 [Project]
-filename = 演讲比赛.dev
+filename = speech.dev
 name = 演讲比赛
 UnitCount = 5
 Type = 1
@@ -7,7 +7,7 @@ Ver = 3
 ObjFiles = 
 Includes = 
 Libs = 
-PrivateResource = 演讲比赛_private.rc
+PrivateResource = 
 ResourceIncludes = 
 MakeIncludes = 
 Compiler = 
@@ -32,7 +32,7 @@ IncludeVersionInfo = 0
 SupportXPThemes = 0
 CompilerSet = 1
 CompilerSetType = 1
-StaticLink = 1
+StaticLink = 0
 AddCharset = 1
 Encoding = AUTO
 ModelType = 0
@@ -144,9 +144,7 @@ DetectEncoding = 1
 
 
 [CompilerSettings]
-cc_cmd_opt_optimize = 2
-cc_cmd_opt_use_pipe = on
-link_cmd_opt_strip_exe = on
 cc_cmd_opt_debug_info = on
+cc_cmd_opt_use_pipe = on
 cc_cmd_opt_warning_all = on
 cc_cmd_opt_warning_extra = on
