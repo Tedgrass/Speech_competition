@@ -9,6 +9,10 @@ speechCompetation::speechCompetation(){
 void speechCompetation::loadData(){
 	fstream fs;
 	fs.open("Honor.csv",ios::in);
+	if(!fs.is_open()){
+		//TODO
+		return;
+	}
 	char sTemp[100];
 	int i=1;
 	 while(!fs.eof()){
