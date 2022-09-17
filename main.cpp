@@ -27,6 +27,7 @@ int main() {
 			break;
 		case 3:
 			//清空比赛记录
+			sc.clead();
 			system("pause");
 			system("cls");
 			break;

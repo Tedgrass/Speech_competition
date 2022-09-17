@@ -2,8 +2,24 @@
 
 //构造
 speechCompetation::speechCompetation(){
-	
-	this->numSpeech=0;
+	this->loadData();
+}
+
+//加载往届文件
+void speechCompetation::loadData(){
+	fstream fs;
+	fs.open("Honor.csv",ios::in);
+	char sTemp[100];
+	int i=1;
+	 while(!fs.eof()){
+		 //TODO
+		 fs.getline(sTemp,100);
+		 this->vInfo.push_back(sTemp);
+		 if(i%3==0){
+			this->numSpeech++;
+		 }
+		 i++;
+	 }
 }
 
 //欢迎界面
@@ -151,17 +167,23 @@ void speechCompetation::saveData(){
 	fs.open("Honor.csv",ios::out);
 	for(vector<int>::iterator it=this->vHonor.begin();it!=this->vHonor.end();it++){
 		//TODO
-		fs<<this->mPerson.at(*it).m_name<<",";
+		fs<<this->mPerson.at(*it).m_name<<","<<endl;
 	}
 	fs.close();
 }
 
-//读取文档
-void speechCompetation::loadData(){
-	fstream fs;
-	fs.open("Honor.csv",ios::in);
-	string str;
-	fs.close();
+//清除记录
+void speechCompetation::clead(){
+		cout<<"确认清除所有比赛记录？"<<endl;
+		int Temp;
+		cin>>Temp;
+		if(Temp){
+			//TODO
+		this->numSpeech=0;
+		this->vHonor.clear();
+		this->vInfo.clear();
+		this->saveData();
+		}
 }
 
 //退出

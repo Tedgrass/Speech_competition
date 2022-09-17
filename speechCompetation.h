@@ -16,6 +16,8 @@ class speechCompetation{
 public:
 	//构造
 	speechCompetation();
+	//加载往届文件
+	void loadData();
 	//欢迎界面
 	void welcome();
 	//准备12名参赛选手
@@ -30,8 +32,8 @@ public:
 	void showInfo();
 	//保存成绩信息
 	void saveData();
-	//读取文档
-	void loadData();
+	//清除记录
+	void clead();
 	//退出
 	void exitCompetation();
 	//析构
